@@ -8,6 +8,11 @@ data_dic = {"Name": ["Mohan","Ram","Jason"],
 
 df = pd.DataFrame(data_dic)
 
+
+## adding new now to df for V2
+new_row_loc = {"Name":"Jigna","Age":21,"City":"PUN"}
+df.loc[len(df.index)] = new_row_loc
+
 data_dir = "data"
 os.makedirs(data_dir,exist_ok = True)
 
